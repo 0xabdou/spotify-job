@@ -4,7 +4,7 @@ const fetch = require("node-fetch");
 const doTheJob = async () => {
   try {
     const secret = core.getInput('secret');
-    console.log("SECRET IS: ", secret);
+    core.debug(`SECRET IS: ${secret}`);
     const response = await fetch(
       "https://www.abdou.dev/api/spotify/update-liked-songs",
       {
