@@ -1,0 +1,9 @@
+name: 'Spotify Job'
+description: 'Calls an API endpoint that updates a Spotify playlist'
+inputs:
+  secret: # id of input
+    description: 'This is how I protect the endpoint'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
