@@ -25,4 +25,4 @@ jobs:
       - name: Execute the action
         uses: ./
         with:
-          secret: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          secret: '${{ secrets.SPOTIFY_CLIENT_SECRET }}'
