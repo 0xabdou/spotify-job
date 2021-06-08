@@ -2250,8 +2250,7 @@ const fetch = __nccwpck_require__(913);
 
 const doTheJob = async () => {
   try {
-    const secret = core.getInput('super_secret');
-    core.debug(`SECRET IS: ${secret.toUpperCase()}`);
+    const secret = core.getInput('secret');
     const response = await fetch(
       "https://www.abdou.dev/api/spotify/update-liked-songs",
       {
