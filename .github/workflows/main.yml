@@ -1,11 +1,10 @@
-# This is an action that calls an API endpoint every ${duration}
-# Calling that endpoint updates my Spotify playlist
+# This is a test workflow
 
-name: UpdateLikedSongs
+name: Test
 
 # Controls when the action will run. 
 on:
-  # Schedules the cron job to be run every ${duration}
+  # Schedules the cron job to be run every 5 mins (theoretically)
   schedule:
     - cron: "5 * * * *"
 
